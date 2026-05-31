@@ -1,0 +1,111 @@
+main{
+    width: 100%;
+}
+
+.hero-carousel{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#carouselExampleAutoplaying,
+.carousel-inner,
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mainTxt{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40%;
+    max-width: 520px;
+}
+.mainTxt >span{
+    color: var(--corPrincipal);
+    font-size: 1.5rem;
+}
+.mainTxt h1{
+    font-size: 3.5rem;
+    font-family: var(--fontH1);
+}
+.mainTxt h2{
+    font-family: var(--fontSecundaria);
+    font-size: 4rem;
+    color: var(--corPrincipal);
+}
+.btnCatalogo{
+    background-color: var(--corPrincipal);
+    padding: 0.8rem 1.3rem !important;
+    border-radius: 20px;
+    color: var(--corSecundaria);
+    transition: .5s ease;
+}
+.btnCatalogo:hover{
+    transform: scale(1.08);
+}
+.btnCall{
+    border: 1px solid var(--corPrincipal);
+    border-radius: 20px;
+    padding: 0.8rem 1.3rem !important;
+    color: var(--corPrincipal);
+    transition: 0.5s ease;
+}
+.btnCall:hover{
+    background: var(--corPrincipal);
+    color: var(--corSecundaria);
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem !important;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    z-index: 30;
+}
+
+@media (max-width: 768px){
+    .hero-carousel{
+        height: 500px;
+    }
+    .carousel-item img{
+        filter: blur(2px);
+    }
+    .btns{
+        justify-content: center;
+    }
+    
+    .mainTxt{
+        width: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .mainTxt > span{
+        font-size: 1.2rem;
+    }
+    .mainTxt h1{
+        font-size: 2.5rem;
+    }
+    .mainTxt h2{
+        font-size: 3.5rem;
+    }
+    .btns{
+        flex-direction: column;
+        padding: 0.8rem 0.5rem !important;
+    }
+}

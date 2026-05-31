@@ -1,0 +1,34 @@
+.navbar-collapse{
+    padding: 0 20px !important;
+}
+.bg-green{
+    background-color: var(--corPrincipal);
+}
+.imgLogo{
+    width: 7vw;
+}
+.navbar-nav{
+    display: flex;
+    gap: 20px;
+}
+.nav-link{
+    color: var(--corSecundaria) !important;
+    transition: .5s ease;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: #667349 !important;
+}
+.btn-outline-light{
+    padding: 8px !important;
+    text-transform: uppercase;
+}
+.bi-list{
+    color: var(--corSecundaria ) !important;
+    font-size: 2rem;
+}
+@media (max-width: 768px){
+    .imgLogo{
+        width: 15vw;
+    }
+}
