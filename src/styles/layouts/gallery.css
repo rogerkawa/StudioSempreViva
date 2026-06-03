@@ -1,0 +1,146 @@
+article{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+.txtArticle{
+    grid-column: span 6;
+    text-align: center;
+    place-items: center;
+}
+.txtArticle h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--corPrincipal);
+    font-weight: 400;
+}
+.txtArticle span{
+    color: var(--corPrincipal);
+}
+.bi-arrow-left, .bi-arrow-right{
+    font-size: 1.2rem;
+}
+.btnArticle{
+    width: 20vw;
+    text-align: center;
+    background: var(--corPrincipal);
+    color: var(--corSecundaria);
+    padding: 0.5rem !important;
+    border-radius: 20px;
+    margin: 30px auto !important;
+    position: relative;
+    overflow: hidden;
+}
+.btnArticle::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(255,246,229,.4),
+        transparent 70%
+    );
+
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.btnArticle:hover::after{
+    opacity: 1;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+    transition: all .5s ease;
+}
+.gallery:hover img{
+    opacity: .5;
+}
+.gallery img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+@media (max-width: 1024px){
+
+    article{
+        max-width: 90%;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .txtArticle{
+        grid-column: span 3;
+    }
+
+    .btnArticle{
+        width: fit-content;
+        padding: .7rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px){
+
+    .txtArticle h1{
+        font-size: 1.3rem;
+    }
+
+    .btnArticle{
+        width: fit-content;
+        padding: .7rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px){
+
+    article{
+        max-width: 95%;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
+
+    .txtArticle{
+        grid-column: span 2;
+    }
+
+    .txtArticle h1{
+        font-size: 1.1rem;
+    }
+
+    .btnArticle{
+        width: 100%;
+        max-width: 18rem;
+        padding: .8rem !important;
+    }
+}
+
+@media (max-width: 400px){
+
+    .gallery{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .txtArticle{
+        grid-column: span 1;
+    }
+
+    .gallery img{
+        margin: 0 auto !important;
+        width: 80%;
+    }
+}

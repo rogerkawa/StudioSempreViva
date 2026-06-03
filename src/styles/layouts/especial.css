@@ -1,0 +1,163 @@
+.especial{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto !important;
+    background-image: url(../../assets/images/backgroundDiaDosNamorados.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px !important;
+    border-radius: 15px;
+}
+.txtEspecial{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 40px !important;
+}
+.especial span{
+    color: var(--corPrincipal);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-left: 40px !important;
+}.txtEspecial h1{
+    font-family: var(--fontH1);
+    font-weight: 400;
+}
+.txtEspecial h1 strong{
+    font-family: var(--fontSecundaria);
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--corPrincipal);
+}
+.btn-outline-green{
+    width: 10vw;
+    background: var(--corPrincipal) !important;
+    padding: 0.5rem 0rem !important;
+    border-radius: 20px !important;
+    color: var(--corSecundaria) !important;
+    transition: .35s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.btn-outline-green::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+
+    transition: left .6s ease;
+}
+
+.btn-outline-green:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(156,175,136,.3);
+}
+
+.btn-outline-green:hover::before{
+    left: 150%;
+}
+@media (max-width: 1024px){
+    .especial{
+        max-width: 90%;
+        padding: 1.5rem !important;
+        background-position: center right;
+    }
+
+    .txtEspecial{
+        margin-left: 1rem !important;
+        max-width: 60%;
+    }
+
+    .especial span{
+        margin-left: 1rem !important;
+        font-size: 1rem;
+    }
+
+    .txtEspecial h1 strong{
+        font-size: 2.8rem;
+    }
+
+    .btn-outline-green{
+        width: 12rem;
+    }
+}
+
+@media (max-width: 870px){
+    .especial{
+        max-width: 95%;
+        padding: 1.2rem !important;
+        background-position: center;
+    }
+
+    .txtEspecial{
+        margin-left: 0 !important;
+        max-width: 70%;
+        gap: 0.8rem;
+
+    }
+
+    .especial span{
+        margin-left: 0 !important;
+        font-size: 0.8rem;
+    }
+
+    .txtEspecial h1{
+        font-size: 1.6rem;
+    }
+
+    .txtEspecial h1 strong{
+        font-size: 2.2rem;
+    }
+
+    .btn-outline-green{
+        width: 10rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 700px){
+    .especial{
+        max-width: 95%;
+        min-height: 22rem;
+        background-position: right center;
+        padding: 1rem !important;
+        background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('../../assets/images/backgroundDiaDosNamorados.png');
+        color: var(--corSecundaria);
+    }
+    
+
+    .txtEspecial{
+        max-width: 100%;
+    }
+
+    .txtEspecial h1{
+        font-size: 2rem;
+    }
+
+    .txtEspecial h1 strong{
+        font-size: 2.5rem;
+    }
+
+    .btn-outline-green{
+        width: 9rem;
+        padding: 0.7rem 0 !important;
+        margin-top: 50px !important;
+    }
+}

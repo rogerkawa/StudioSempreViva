@@ -1,0 +1,144 @@
+.sobre{
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto !important;
+    display: flex;
+    justify-content: space-between;
+}
+.sobre img{
+    width: 50%;
+    animation: floatImage 5s ease-in-out infinite;
+}
+
+.txtSobre{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px !important;
+}
+.txtSobre span{
+    color: var(--corPrincipal);
+}
+.txtSobre h1{
+    font-family: var(--fontH1);
+}
+.txtSobre h1 strong{
+    font-family: var(--fontSecundaria);
+    font-weight: 400;
+    color: var(--corPrincipal);
+    font-size: 3.5rem;
+}
+.pSobre{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.btnSobre{
+    width: fit-content;
+    text-align: center;
+    background: var(--corPrincipal);
+    padding: 0.5rem !important;
+    border-radius: 20px;
+    color: var(--corSecundaria);
+    text-transform: uppercase;
+    box-shadow: 0 6px 0 #7e8f6e;
+    transition: all .4s ease;
+}
+.btnSobre:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 9px 0 #7e8f6e;
+}
+.btnSobre:active{
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #7e8f6e;
+}
+@keyframes floatImage{
+    0%, 100%{
+        transform: translateY(0) scale(1);
+    }
+
+    50%{
+        transform: translateY(-0.4rem) scale(1.02);
+    }
+}
+@media (max-width: 1024px){
+    .sobre{
+        max-width: 90%;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .sobre img{
+        width: 45%;
+    }
+
+    .txtSobre h1 strong{
+        font-size: 2.8rem;
+    }
+
+    .btnSobre{
+        width: fit-content;
+        padding: 0.6rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px){
+    .sobre{
+        max-width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre img{
+        width: 80%;
+        max-width: 28rem;
+    }
+
+    .txtSobre{
+        align-items: center;
+        padding: 1rem !important;
+    }
+
+    .txtSobre h1 strong{
+        font-size: 2.3rem;
+    }
+
+    .pSobre{
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+
+    .btnSobre{
+        width: fit-content;
+        padding: 0.6rem 1.7rem !important;
+    }
+}
+
+@media (max-width: 480px){
+    .sobre{
+        margin: 2rem auto !important;
+    }
+
+    .sobre img{
+        width: 100%;
+    }
+
+    .txtSobre h1{
+        font-size: 1.6rem;
+    }
+
+    .txtSobre h1 strong{
+        font-size: 2rem;
+    }
+
+    .pSobre{
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .btnSobre{
+        font-size: 0.8rem;
+        padding: 0.55rem 1.4rem !important;
+    }
+}
