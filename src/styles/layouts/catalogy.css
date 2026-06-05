@@ -1,4 +1,4 @@
-.catalogo{
+#catalogo{
     width: 100%;
     max-width: 1300px;
     margin: 50px auto !important;
@@ -12,12 +12,16 @@
     place-items: center;
 }
 .cardCatalog{
+    height: 100% !important;
+    min-height: 62vh;
     overflow: hidden;
     transition: all .3s ease;
     cursor: pointer;
 }
 .cardCatalog img{
     transition: transform .5s ease;
+    height: 260px;
+    object-fit: cover;
 }
 .cardCatalog img:hover{
     transform: scale(1.08);
@@ -48,10 +52,23 @@
 .card-body{
     display: flex;
     flex-direction: column;
+    flex: 1;
     background: var(--corSecundaria);
     color: var(--corPrincipal) !important;
     padding: 10px !important;
     gap: 10px !important;
+}
+.card-body span{
+    min-height: 45px;
+    flex: 1;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* quantidade de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card-text{
+    margin-top: auto !important;
 }
 .btn-outline-beige{
     border: 1px solid var(--corPrincipal) !important;
@@ -61,6 +78,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px !important;
+    margin-top: auto !important;
 }
 .btn-outline-beige:hover{
     background-color: var(--corPrincipal) !important;
@@ -103,10 +121,10 @@
     .gridCatalogo{
         grid-template-columns: repeat(3, 1fr) !important;
     }
-    .catalogo{
+    #catalogo{
         max-width: 1000px;
     }
-    .catalogo{
+    #catalogo{
         max-width: 900px;
         padding: 0 20px;
     }
@@ -141,7 +159,7 @@
 }
 
 @media (max-width: 480px){
-    .catalogo{
+    #catalogo{
         margin: 30px auto !important;
         padding: 0 15px;
     }

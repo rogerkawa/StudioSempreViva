@@ -7,6 +7,9 @@
     margin: 0 !important;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: var(--fontPrincipal) !important;
 }

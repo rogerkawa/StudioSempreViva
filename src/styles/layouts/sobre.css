@@ -1,12 +1,13 @@
-.sobre{
+#sobre{
     width: 100%;
     max-width: 1300px;
     margin: 50px auto !important;
     display: flex;
     justify-content: space-between;
 }
-.sobre img{
+#sobre img{
     width: 50%;
+    border-radius: 20px;
     animation: floatImage 5s ease-in-out infinite;
 }
 
@@ -63,13 +64,13 @@
     }
 }
 @media (max-width: 1024px){
-    .sobre{
+    #sobre{
         max-width: 90%;
         gap: 2rem;
         align-items: center;
     }
 
-    .sobre img{
+    #sobre img{
         width: 45%;
     }
 
@@ -84,13 +85,13 @@
 }
 
 @media (max-width: 768px){
-    .sobre{
+    #sobre{
         max-width: 90%;
         flex-direction: column;
         text-align: center;
     }
 
-    .sobre img{
+    #sobre img{
         width: 80%;
         max-width: 28rem;
     }
@@ -116,11 +117,11 @@
 }
 
 @media (max-width: 480px){
-    .sobre{
+    #sobre{
         margin: 2rem auto !important;
     }
 
-    .sobre img{
+    #sobre img{
         width: 100%;
     }
 
