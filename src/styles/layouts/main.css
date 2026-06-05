@@ -69,7 +69,7 @@ main{
 .btns{
     display: flex;
     gap: 1rem;
-    margin-top: 3rem !important;
+    margin-top: 2.5rem !important;
 }
 .carousel-control-prev,
 .carousel-control-next{
@@ -107,5 +107,6 @@ main{
     .btns{
         flex-direction: column;
         padding: 0.8rem 0.5rem !important;
+        margin-top: 1rem !important;
     }
 }

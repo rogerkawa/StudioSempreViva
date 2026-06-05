@@ -29,3 +29,8 @@ img{
     --corPrincipal: #888c65;
     --corSecundaria: #fff6e5;
 }
+
+/* Efeito de scroll */
+.categoria-card, .cardCatalog, .especial, .txtSobre, #sobre img, .gallery, .footer{
+    visibility: hidden;
+}
