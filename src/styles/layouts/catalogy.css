@@ -8,12 +8,15 @@
 .gridCatalogo{
     display: grid;
     grid-template-columns: repeat(6,1fr) !important;
+    align-items: stretch !important;
     gap: 15px;
     place-items: center;
 }
 .cardCatalog{
-    height: 100% !important;
-    min-height: 62vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     transition: all .3s ease;
     cursor: pointer;
