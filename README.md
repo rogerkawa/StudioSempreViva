@@ -2,7 +2,7 @@
 
 Landing Page desenvolvida para a Studio Sempre Viva, com o objetivo de fortalecer sua presença digital, apresentar seus produtos e facilitar o contato com novos clientes por meio de uma interface moderna, responsiva e intuitiva.
 
-
+![Preview do projeto](assets/images/StudioLocal.png)
 
 🌐 Site Online
 
