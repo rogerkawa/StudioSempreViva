@@ -50,7 +50,6 @@
 }
 
 .payments img{
-    margin: 15px auto !important;
     height: 22px;
     object-fit: contain;
 }
@@ -86,9 +85,6 @@
 
     .payments{
         justify-content: center;
-    }
-    .payments img{
-        margin: 20px auto !important;
     }
 
 }

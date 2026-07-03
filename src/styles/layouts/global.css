@@ -26,11 +26,6 @@ img{
     --fontH1: "Noto Serif JP", serif; 
 
     /* Cores */
-    --corPrincipal: #888c65;
+    --corPrincipal: #9caf88;
     --corSecundaria: #fff6e5;
-}
-
-/* Efeito de scroll */
-.categoria-card, .cardCatalog, .especial, .txtSobre, #sobre img, .gallery, .footer{
-    visibility: hidden;
 }
