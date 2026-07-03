@@ -31,4 +31,5 @@ Código organizado e de fácil manutenção
 HTML5
 CSS3
 JavaScript (Vanilla)
+Bootstrap
 GSAP
